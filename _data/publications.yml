@@ -1,27 +1,21 @@
-- title: DeltaGNN: Graph Neural Network with Information Flow Control
-  authors: Kevin Mancini and Islem Rekik
-  venue: arXiv preprint; under revision at IEEE TPAMI
+- title: "DeltaGNN: Graph Neural Network with Information Flow Control"
+  authors: "Kevin Mancini, Islem Rekik"
+  venue: "arXiv preprint"
   year: 2025
   links:
-    - label: arXiv
-      url: https://arxiv.org/abs/2501.06002
-    - label: code
-      url: https://github.com/basiralab/DeltaGNN
-- title: DuoGNN: Topology-aware Graph Neural Network with Homophily and Heterophily Interaction-Decoupling
-  authors: Kevin Mancini and Islem Rekik
-  venue: MICCAI GRAIL workshop proceedings
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2501.06002"
+
+- title: "DuoGNN: Topology-aware Graph Neural Network with Homophily and Heterophily Interaction-Decoupling"
+  authors: "Kevin Mancini, Islem Rekik"
+  venue: "GRAIL Workshop at MICCAI"
   year: 2024
   links:
-    - label: workshop paper
-      url: https://link.springer.com/chapter/10.1007/978-3-031-83243-7_12
-    - label: arXiv
-      url: https://arxiv.org/abs/2409.19616
-    - label: code
-      url: https://github.com/basiralab/DuoGNN
-- title: ScaFi: Integration and Performance Analysis with Scala Native
-  authors: Kevin Mancini, Mirko Viroli, and Gianluca Aguzzi
-  venue: Bachelor's thesis project, University of Bologna
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2409.19616"
+
+- title: "ScaFi: Integration and Performance Analysis with Scala Native"
+  authors: "Kevin Mancini, Mirko Viroli, Gianluca Aguzzi"
+  venue: "Bachelor thesis, University of Bologna"
   year: 2022
-  links:
-    - label: thesis
-      url: https://amslaurea.unibo.it/id/eprint/25688/
+  links: []
