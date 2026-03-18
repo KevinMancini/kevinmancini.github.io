@@ -1,0 +1,33 @@
+title: Kevin Mancini
+description: Personal website — academy, sport, and art.
+baseurl: ""
+url: ""
+markdown: kramdown
+permalink: pretty
+collections:
+  sport:
+    output: true
+    permalink: /sport/:name/
+  art:
+    output: true
+    permalink: /art/:name/
+defaults:
+  - scope:
+      path: ""
+      type: "sport"
+    values:
+      layout: post
+      section: sport
+  - scope:
+      path: ""
+      type: "art"
+    values:
+      layout: post
+      section: art
+  - scope:
+      path: ""
+    values:
+      layout: page
+exclude:
+  - README.md
+  - templates/

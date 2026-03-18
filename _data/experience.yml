@@ -1,0 +1,15 @@
+- company: Deloitte
+  place: Milan, Italy
+  years: 2022 - 2023
+  role: Business Analyst and Developer
+  details:
+    - Designed and developed a financial planner and led client meetings.
+    - Automated internal processes with Python, reducing development time significantly.
+    - Worked with Agile workflows, microservices, AWS, APIs, Spring Boot, Oracle DB, Redis, Docker, and OpenShift.
+- company: CRIF
+  place: Bologna, Italy
+  years: 2021
+  role: Software Engineer Intern
+  details:
+    - Winner of the CRIF GT Smart Up Internship competition.
+    - Reduced SQL Server installation time by 80 percent using Ansible and Jenkins automation.

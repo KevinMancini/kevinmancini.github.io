@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<section class="page-hero">
+  <div class="container narrow">
+    <p class="eyebrow">{{ page.section | capitalize }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="lead page-intro">{% if page.excerpt %}{{ page.excerpt }}{% endif %}</p>
+    <p class="meta strong-meta">{{ page.date | date: "%d %B %Y" }}{% if page.location %} · {{ page.location }}{% endif %}</p>
+  </div>
+</section>
+
+<section class="page-content">
+  <div class="container narrow">
+    {% if page.cover_image %}
+      <img class="cover-image" src="{{ page.cover_image | relative_url }}" alt="{{ page.title }}" />
+    {% endif %}
+    <article class="prose">
+      {{ content }}
+    </article>
+    {% if page.tags %}
+      <div class="tag-row">
+        {% for tag in page.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>

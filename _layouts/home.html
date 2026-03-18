@@ -1,0 +1,118 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Academy · Sport · Art</p>
+      <h1>A clear home for research, adventure, and creative work.</h1>
+      <p class="lead">{{ site.data.profile.summary }} {{ site.data.profile.research_focus }}</p>
+      <div class="button-row">
+        <a class="button primary" href="{{ '/academy/' | relative_url }}">Explore the academic profile</a>
+        <a class="button" href="{{ site.data.profile.cv }}">Download CV</a>
+      </div>
+      <div class="social-row">
+        <a href="{{ site.data.profile.scholar }}">Scholar</a>
+        <a href="{{ site.data.profile.linkedin }}">LinkedIn</a>
+        <a href="{{ site.data.profile.github }}">GitHub</a>
+        <a href="mailto:{{ site.data.profile.email }}">Email</a>
+      </div>
+    </div>
+    <aside class="panel hero-panel">
+      <p class="mini-heading">Current direction</p>
+      <p>{{ site.data.profile.current_note }}</p>
+      <ul class="compact-list">
+        <li>Graph neural networks and information flow control</li>
+        <li>Topology- and geometry-aware learning</li>
+        <li>Sport and travel stories collected as a living journal</li>
+        <li>Music notes, listening reflections, and writing drafts</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Website structure</p>
+        <h2>Three sections, one consistent language.</h2>
+      </div>
+      <p class="section-copy">The structure is intentionally simple: an academic page with curated data, and two journal-style sections for sport and art that can grow one post at a time.</p>
+    </div>
+
+    <div class="card-grid three-up">
+      <a class="panel card-link" href="{{ '/academy/' | relative_url }}">
+        <p class="mini-heading">Academy</p>
+        <h3>Background, publications, talks, and links</h3>
+        <p>A structured academic page inspired by concise personal research websites.</p>
+      </a>
+      <a class="panel card-link" href="{{ '/sport/' | relative_url }}">
+        <p class="mini-heading">Sport</p>
+        <h3>Adventures, climbing, alpinism, running, diving, travel</h3>
+        <p>Built like a clean journal so you can add one story and one photo set at a time.</p>
+      </a>
+      <a class="panel card-link" href="{{ '/art/' | relative_url }}">
+        <p class="mini-heading">Art</p>
+        <h3>Classical music, writing, and personal reflections</h3>
+        <p>A second blog-style archive for essays, repertoire notes, and fragments.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section-block muted-band">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Latest additions</p>
+        <h2>Ready for future posts.</h2>
+      </div>
+      <p class="section-copy">As soon as you add Markdown files to the sport or art collections, the cards below will populate automatically.</p>
+    </div>
+
+    <div class="split-grid">
+      <div>
+        <h3 class="column-title">Sport journal</h3>
+        {% assign latest_sport = site.sport | sort: 'date' | reverse %}
+        {% if latest_sport.size > 0 %}
+          <div class="stack">
+            {% for post in latest_sport limit:2 %}
+              <a class="panel post-teaser" href="{{ post.url | relative_url }}">
+                <p class="meta">{{ post.date | date: "%d %b %Y" }}{% if post.location %} · {{ post.location }}{% endif %}</p>
+                <h4>{{ post.title }}</h4>
+                <p>{{ post.excerpt | default: post.content | strip_html | strip_newlines | truncate: 130 }}</p>
+              </a>
+            {% endfor %}
+          </div>
+        {% else %}
+          <div class="panel empty-state">
+            <p>No sport stories published yet.</p>
+            <p class="muted">Copy the template file into <code>_sport/</code> and your first post will appear here automatically.</p>
+          </div>
+        {% endif %}
+      </div>
+
+      <div>
+        <h3 class="column-title">Art journal</h3>
+        {% assign latest_art = site.art | sort: 'date' | reverse %}
+        {% if latest_art.size > 0 %}
+          <div class="stack">
+            {% for post in latest_art limit:2 %}
+              <a class="panel post-teaser" href="{{ post.url | relative_url }}">
+                <p class="meta">{{ post.date | date: "%d %b %Y" }}{% if post.location %} · {{ post.location }}{% endif %}</p>
+                <h4>{{ post.title }}</h4>
+                <p>{{ post.excerpt | default: post.content | strip_html | strip_newlines | truncate: 130 }}</p>
+              </a>
+            {% endfor %}
+          </div>
+        {% else %}
+          <div class="panel empty-state">
+            <p>No art posts published yet.</p>
+            <p class="muted">Copy the template file into <code>_art/</code> and your first essay or music note will appear here automatically.</p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

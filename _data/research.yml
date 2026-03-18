@@ -1,0 +1,23 @@
+- role: Researcher
+  place: Riemannian RL for PDE-constrained shape optimisation
+  years: 2025 - present
+  details:
+    - Implementing a PPO agent to optimise simplicial 2-complexes under fluid dynamics constraints.
+- role: Researcher
+  place: I-X, Imperial College London
+  years: 2024 - present
+  details:
+    - Designed a topology-aware graph neural network in Python.
+    - Ongoing work connected to DeltaGNN and graph-based learning research.
+- role: Student Researcher
+  place: Deep Learning and Topology
+  years: 2023 - 2024
+  details:
+    - Developed a curvature-based deep neural network for medical imaging.
+    - Work presented orally at the MICCAI GRAIL workshop.
+- role: Engineer
+  place: Internet of Things project
+  years: 2021 - 2022
+  details:
+    - Led an international team of six students.
+    - Ranked 1st out of 14 in the Hull IoT project competition.
