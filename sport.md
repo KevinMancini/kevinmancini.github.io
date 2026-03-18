@@ -2,33 +2,29 @@
 title: Sport
 permalink: /sport/
 kicker: Journal
-intro: A home for climbing, alpinism, trekking, running, diving, and travel stories — designed to be updated post by post.
+intro: Climbing, alpinism, trekking, running, diving, and travel — collected as a simple archive of stories and photographs.
 ---
 
-<div class="panel callout">
-  <p>This page works like a clean archive. Add a new Markdown file to <code>_sport/</code>, commit it to GitHub, and the post will appear automatically here and on the home page.</p>
+<div class="callout">
+  <p>This page is meant to stay easy to update. Add a new Markdown file to <code>_sport/</code>, commit it, and it will appear automatically.</p>
 </div>
 
 {% assign posts = site.sport | sort: 'date' | reverse %}
 {% if posts.size > 0 %}
-  <div class="post-grid">
+  <div class="archive-list">
     {% for post in posts %}
-      <a class="panel post-card" href="{{ post.url | relative_url }}">
-        {% if post.cover_image %}
-          <img class="post-card-image" src="{{ post.cover_image | relative_url }}" alt="{{ post.title }}" />
-        {% else %}
-          <div class="post-card-placeholder">Sport</div>
-        {% endif %}
-        <div class="post-card-body">
-          <p class="meta">{{ post.date | date: "%d %b %Y" }}{% if post.location %} · {{ post.location }}{% endif %}</p>
+      <a class="archive-item" href="{{ post.url | relative_url }}">
+        <div class="archive-date">{{ post.date | date: "%d %b %Y" }}</div>
+        <div class="archive-content">
           <h3>{{ post.title }}</h3>
-          <p>{{ post.excerpt | default: post.content | strip_html | strip_newlines | truncate: 140 }}</p>
+          <p class="meta">{% if post.location %}{{ post.location }}{% else %}Sport journal{% endif %}</p>
+          <p>{{ post.excerpt | default: post.content | strip_html | strip_newlines | truncate: 170 }}</p>
         </div>
       </a>
     {% endfor %}
   </div>
 {% else %}
-  <div class="panel empty-state">
+  <div class="empty-state panel">
     <p>No sport entries yet.</p>
     <p class="muted">Copy <code>templates/sport-post-template.md</code> into <code>_sport/</code>, rename it, and start writing.</p>
   </div>
