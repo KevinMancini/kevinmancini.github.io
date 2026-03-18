@@ -5,7 +5,7 @@ layout: default
   <div class="container narrow">
     <p class="eyebrow">{{ page.section | capitalize }}</p>
     <h1>{{ page.title }}</h1>
-    {% if page.excerpt %}<p class="lead page-intro">{{ page.excerpt }}</p>{% endif %}
+    <p class="lead page-intro">{% if page.excerpt %}{{ page.excerpt }}{% endif %}</p>
     <p class="meta strong-meta">{{ page.date | date: "%d %B %Y" }}{% if page.location %} · {{ page.location }}{% endif %}</p>
   </div>
 </section>

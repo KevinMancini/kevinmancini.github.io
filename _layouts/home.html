@@ -1,113 +1,59 @@
 ---
 layout: default
 ---
-<section class="hero">
-  <div class="container">
-    <div class="hero-copy">
-      <p class="eyebrow">Academy / Sport / Art</p>
-      <h1>Research, mountains, music, and writing.</h1>
-      <p class="lead">{{ site.data.profile.summary }} {{ site.data.profile.research_focus }}</p>
-      <div class="button-row">
-        <a class="button primary" href="{{ '/academy/' | relative_url }}">Academic profile</a>
-        <a class="button" href="{{ '/sport/' | relative_url }}">Sport journal</a>
-        <a class="button" href="{{ '/art/' | relative_url }}">Art journal</a>
-        <a class="button" href="{{ site.data.profile.cv }}">CV</a>
-      </div>
-      <div class="social-row">
-        <a href="{{ site.data.profile.scholar }}">Scholar</a>
-        <a href="{{ site.data.profile.linkedin }}">LinkedIn</a>
-        <a href="{{ site.data.profile.github }}">GitHub</a>
-        <a href="mailto:{{ site.data.profile.email }}">Email</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-block">
-  <div class="container home-sections">
-    <div class="archive-list">
-      <a class="home-section-link archive-item" href="{{ '/academy/' | relative_url }}">
-        <div class="archive-date">Academy</div>
-        <div class="archive-content">
-          <h3>Background, publications, talks, and links</h3>
-          <p>A concise academic page with education, research projects, selected publications, professional links, and a downloadable CV.</p>
-        </div>
-      </a>
-
-      <a class="home-section-link archive-item" href="{{ '/sport/' | relative_url }}">
-        <div class="archive-date">Sport</div>
-        <div class="archive-content">
-          <h3>Adventures, climbing, alpinism, trekking, running, diving, travel</h3>
-          <p>A simple archive for stories and photographs from the outdoors, designed so you can add one post at a time.</p>
-        </div>
-      </a>
-
-      <a class="home-section-link archive-item" href="{{ '/art/' | relative_url }}">
-        <div class="archive-date">Art</div>
-        <div class="archive-content">
-          <h3>Classical music, writing, and notes</h3>
-          <p>A quiet place for repertoire reflections, essays, fragments, and longer pieces of writing.</p>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section-block muted-band">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Recent writing</p>
-        <h2>Latest posts</h2>
-      </div>
-      <p class="section-copy">When you add Markdown files to the sport or art collections, they will appear here automatically.</p>
+<section class="home-intro">
+  <div class="container intro-grid">
+    <div class="intro-image-wrap">
+      <img class="intro-image" src="{{ '/assets/images/kevin-home.jpg' | relative_url }}" alt="Kevin Mancini standing on a mountain trail with trekking poles raised under a clear blue sky" />
     </div>
 
-    <div class="split-grid">
-      <div>
-        <h3 class="column-title">Sport</h3>
-        {% assign latest_sport = site.sport | sort: 'date' | reverse %}
-        {% if latest_sport.size > 0 %}
-          <div class="archive-list">
-            {% for post in latest_sport limit:3 %}
-              <a class="post-teaser" href="{{ post.url | relative_url }}">
-                <div class="archive-date">{{ post.date | date: "%d %b %Y" }}</div>
-                <div class="archive-content">
-                  <h4>{{ post.title }}</h4>
-                  <p>{{ post.excerpt | default: post.content | strip_html | strip_newlines | truncate: 120 }}</p>
-                </div>
-              </a>
-            {% endfor %}
-          </div>
-        {% else %}
-          <div class="empty-state panel">
-            <p>No sport stories published yet.</p>
-            <p class="muted">Add a file in <code>_sport/</code> and it will show up here.</p>
-          </div>
-        {% endif %}
+    <div class="intro-copy">
+      <div class="bio-text">
+        <p>My name is Kevin Mancini, and I am an adventurer. I apologize for the vagueness of the term, but I hope you will forgive it once you have read a little further, since my last intention is to confuse you more than I already confuse myself.</p>
+
+        <p>I spend my days struggling through the meanders of mathematics, in the frenzy of implementing a new app, or in the adrenaline of climbing a rock face. Most likely, even now, I am absorbed in one of these, or perhaps in imagining the next one; or, in the words of Kazuo Ishiguro:</p>
+
+        <blockquote>“It seems increasingly likely that I really will undertake the expedition that has been preoccupying my imagination now for some days.”</blockquote>
+
+        <p>Though I find it slightly in poor taste, it is probably fair to give you some idea of what I actually do. I promise I will be brief. I studied Computer Science at Imperial College London and Applied Mathematics at Sapienza University of Rome. Next year I will begin a PhD in Mathematics at the University of Warwick. In the past I worked on research in deep learning; now I am mainly interested in stochastic calculus and probability. I am a former Deloitte consultant and, believe it or not, I once worked as a beach entertainer.</p>
+
+        <p>When I am not in the mountains or doing research, I am probably reading a book, writing, studying the piano, or following whatever other passion has happened to take hold of me.</p>
       </div>
 
-      <div>
-        <h3 class="column-title">Art</h3>
-        {% assign latest_art = site.art | sort: 'date' | reverse %}
-        {% if latest_art.size > 0 %}
-          <div class="archive-list">
-            {% for post in latest_art limit:3 %}
-              <a class="post-teaser" href="{{ post.url | relative_url }}">
-                <div class="archive-date">{{ post.date | date: "%d %b %Y" }}</div>
-                <div class="archive-content">
-                  <h4>{{ post.title }}</h4>
-                  <p>{{ post.excerpt | default: post.content | strip_html | strip_newlines | truncate: 120 }}</p>
-                </div>
-              </a>
-            {% endfor %}
-          </div>
-        {% else %}
-          <div class="empty-state panel">
-            <p>No art posts published yet.</p>
-            <p class="muted">Add a file in <code>_art/</code> and it will show up here.</p>
-          </div>
-        {% endif %}
+      <div class="contact-block">
+        <p class="contact-label">If you would like to collaborate, you can reach me here:</p>
+        <div class="icon-links" aria-label="Contact and profile links">
+          <a href="mailto:{{ site.data.profile.email }}" class="icon-link">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            </span>
+            <span>Email</span>
+          </a>
+          <a href="{{ site.data.profile.linkedin }}" class="icon-link">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A1.97 1.97 0 0 0 3.3 4.97c0 1.08.87 1.95 1.95 1.95a1.96 1.96 0 1 0 0-3.92ZM20.7 12.87c0-3.2-1.7-4.69-3.97-4.69-1.83 0-2.65 1-3.1 1.7V8.5h-3.37c.04.92 0 11.5 0 11.5h3.37v-6.42c0-.34.03-.68.13-.93.27-.68.88-1.38 1.92-1.38 1.35 0 1.9 1.03 1.9 2.54V20H20.7v-7.13Z"/></svg>
+            </span>
+            <span>LinkedIn</span>
+          </a>
+          <a href="{{ site.data.profile.scholar }}" class="icon-link">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 9l10 6 10-6-10-6Z"/><path d="M6 12v4.5C6 18.99 8.69 21 12 21s6-2.01 6-4.5V12"/></svg>
+            </span>
+            <span>Scholar</span>
+          </a>
+          <a href="{{ site.data.profile.github }}" class="icon-link">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.7.5 12.11c0 5.12 3.29 9.47 7.86 11 .57.11.78-.25.78-.56 0-.28-.01-1.2-.02-2.18-3.2.71-3.88-1.38-3.88-1.38-.52-1.35-1.28-1.7-1.28-1.7-1.05-.73.08-.72.08-.72 1.16.08 1.77 1.22 1.77 1.22 1.03 1.79 2.71 1.27 3.37.97.1-.76.4-1.27.72-1.56-2.55-.29-5.23-1.3-5.23-5.79 0-1.28.45-2.32 1.19-3.14-.12-.29-.52-1.47.11-3.07 0 0 .97-.32 3.19 1.2a10.86 10.86 0 0 1 5.81 0c2.22-1.52 3.19-1.2 3.19-1.2.63 1.6.23 2.78.11 3.07.74.82 1.19 1.86 1.19 3.14 0 4.5-2.69 5.5-5.25 5.79.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.2.68.79.56a11.62 11.62 0 0 0 7.84-11C23.5 5.7 18.35.5 12 .5Z"/></svg>
+            </span>
+            <span>GitHub</span>
+          </a>
+          <a href="{{ site.data.profile.cv }}" class="icon-link">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 13h4M10 17h4M10 9h2"/></svg>
+            </span>
+            <span>CV</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
