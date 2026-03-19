@@ -2,7 +2,7 @@
   authors: "Kevin Mancini, Islem Rekik"
   venue: "arXiv preprint"
   year: 2025
-  image: "/assets/images/academy/Kevin-home.jpg"
+  image: "/assets/images/academy/deltagnn.png"
   image_alt: "Preview image for DeltaGNN"
   summary: "Introduces information flow control and the information flow score to mitigate over-smoothing and over-squashing in graph neural networks while keeping the added computational overhead linear."
   links:
@@ -13,7 +13,7 @@
   authors: "Kevin Mancini, Islem Rekik"
   venue: "Graphs in Biomedical Image Analysis (MICCAI GRAIL)"
   year: 2025
-  image: "/assets/images/academy/Kevin-home.jpg"
+  image: "/assets/images/academy/duognn.png"
   image_alt: "Preview image for DuoGNN"
   summary: "A topology-aware architecture that separates homophilic and heterophilic interactions so they can be modeled with different inductive biases across heterogeneous graph benchmarks."
   links:
@@ -28,7 +28,7 @@
   authors: "Kevin Mancini, Mirko Viroli, Gianluca Aguzzi"
   venue: "Bachelor thesis, University of Bologna"
   year: 2022
-  image: "/assets/images/academy/Kevin-home.jpg"
+  image: "/assets/images/academy/aggregate.png"
   image_alt: "Preview image for ScaFi"
   summary: "Bachelor thesis on integrating ScaFi with Scala Native and evaluating performance for aggregate computing workflows in distributed systems."
   links:
