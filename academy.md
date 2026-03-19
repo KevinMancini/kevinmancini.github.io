@@ -202,7 +202,7 @@ permalink: /academy/
           <div class="journey-index">01</div>
           <div class="journey-copy">
             <p class="journey-place"><strong>Alma Mater Studiorum – University of Bologna</strong></p>
-            <p class="journey-city">Bologna, Italy</p>
+            <p class="journey-city">Bologna, IT (2018-2021)</p>
             <p class="journey-note">Bachelor’s degree in Computer Science</p>
           </div>
         </li>
@@ -211,7 +211,7 @@ permalink: /academy/
           <div class="journey-index">02</div>
           <div class="journey-copy">
             <p class="journey-place"><strong>University of Hull</strong></p>
-            <p class="journey-city">Hull, United Kingdom</p>
+            <p class="journey-city">Hull, UK (2021-2022)</p>
             <p class="journey-note">Exchange Program</p>
           </div>
         </li>
@@ -220,7 +220,7 @@ permalink: /academy/
           <div class="journey-index">03</div>
           <div class="journey-copy">
             <p class="journey-place"><strong>Deloitte</strong></p>
-            <p class="journey-city">Milan, Italy</p>
+            <p class="journey-city">Milan, IT (2022-2023)</p>
             <p class="journey-note">Consulting</p>
           </div>
         </li>
@@ -229,7 +229,7 @@ permalink: /academy/
           <div class="journey-index">04</div>
           <div class="journey-copy">
             <p class="journey-place"><strong>Imperial College London</strong></p>
-            <p class="journey-city">London, United Kingdom</p>
+            <p class="journey-city">London, UK (2023-2024)</p>
             <p class="journey-note">Master’s studies in Computer Science</p>
           </div>
         </li>
@@ -238,7 +238,7 @@ permalink: /academy/
           <div class="journey-index">05</div>
           <div class="journey-copy">
             <p class="journey-place"><strong>Sapienza University of Rome</strong></p>
-            <p class="journey-city">Rome, Italy</p>
+            <p class="journey-city">Rome, IT (2024-2025)</p>
             <p class="journey-note">Master’s studies in Applied Mathematics</p>
           </div>
         </li>
@@ -247,7 +247,7 @@ permalink: /academy/
           <div class="journey-index">06</div>
           <div class="journey-copy">
             <p class="journey-place"><strong>Technical University of Munich</strong></p>
-            <p class="journey-city">Munich, Germany</p>
+            <p class="journey-city">Munich, DE (2025-2026)</p>
             <p class="journey-note">Exchange Program</p>
           </div>
         </li>
@@ -256,7 +256,7 @@ permalink: /academy/
           <div class="journey-index">07</div>
           <div class="journey-copy">
             <p class="journey-place"><strong>University of Warwick</strong></p>
-            <p class="journey-city">Coventry, United Kingdom</p>
+            <p class="journey-city">Coventry, UK (2026-2030)</p>
             <p class="journey-note">PhD in Mathematics</p>
           </div>
         </li>
