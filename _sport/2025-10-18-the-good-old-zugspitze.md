@@ -4,7 +4,7 @@ title: "The Good Old Zugspitze"
 date: 2025-10-18
 location: "Zugspitze, Germany"
 excerpt: "A fast one-day push from Ehrwald to the summit of the Zugspitze through the Gatterl route, in snow, ice, and very good company."
-cover_image: "/assets/images/sport/zugspitze-cover.jpg"
+cover_image: "/assets/images/sport/icon.JPG"
 tags:
   - hiking
   - alpinism
@@ -17,15 +17,15 @@ While the Zugspitze has a solid and respectable reputation among the German popu
 
 And, in all honesty, I would agree.
 
-Its popularity and accessibility make it truly a mountain for everyone. The story would boringly end here if it were not for a nevertheless. While getting to the top is not, in itself, a great feat of strength — you can even take a train that cuts through the mountain and brings you within a couple of hours of the summit — doing it from the bottom in one day is undoubtedly tough.
+Its popularity and accessibility make it truly a mountain for everyone. The story would boringly end here if it were not for a nevertheless. While getting to the top is not, in itself, a great feat of strength, you can even take a train that cuts through the mountain and brings you within a couple of hours of the summit, doing it from the bottom in one day is undoubtedly tough.
 
 And that is what four other guys and I wanted to achieve.
 
 We decided to start from Ehrwald and hike to the top through the Gatterl route, probably the easiest trail to the summit. But since we were there in the midst of October, the final 500 meters of elevation were already snowy and occasionally icy, which made the ascent feel like a real adventure.
 
 <figure>
-  <img src="/assets/images/sport/zugspitze-approach.jpg" alt="Early approach to the Zugspitze from Ehrwald with wide alpine terrain ahead" />
-  <figcaption>Starting from Ehrwald, with long ground to cover and the mountain still far away.</figcaption>
+  <img src="/assets/images/sport/gatterl.JPG" alt="Starting in Ehrwald, near the Gatterl passage on the German–Austrian border" />
+  <figcaption>Starting in Ehrwald, near the Gatterl passage on the German–Austrian border.</figcaption>
 </figure>
 
 The numbers, in the end, were simple enough: 5 hours and 42 minutes to the top, around 19 kilometres covered, and 2,289 meters of elevation gained.
@@ -37,11 +37,11 @@ It was painful. We were incredibly fast. But we did it.
 A real challenge.
 
 <figure>
-  <img src="/assets/images/sport/zugspitze-snow.jpg" alt="Snowy upper section of the Zugspitze route with icy patches near the summit" />
+  <img src="/assets/images/sport/ice.JPG" alt="Snowy upper view from the Zugspitze, close to summit" />
   <figcaption>The last stretch: snow, some ice, and that particular late-October feeling that makes everything more serious.</figcaption>
 </figure>
 
-Two brave members of the group — not me — escaped the premature glory of reaching the peak and decided to walk down instead of taking the cable car. That may have been the boldest choice of the day.
+Two brave members of the group, not me, escaped the premature glory of reaching the peak and decided to walk down instead of taking the cable car. That may have been the boldest choice of the day.
 
 However impressive the physical challenge was, and however unimpressive the Zugspitze may seem to some, that is not really the reason I wanted to write this adventure down.
 
@@ -52,6 +52,6 @@ It was our first hike together, one of many, and hopefully only the beginning. M
 In both cases, I am sure it will be memorable.
 
 <figure>
-  <img src="/assets/images/sport/zugspitze-team.jpg" alt="Group photo near the summit after completing the ascent" />
-  <figcaption>First hike together. Hopefully not the last.</figcaption>
+  <img src="/assets/images/sport/team.jpeg" alt="The team (left to right): Ondra, Tomás, Imants, Raphael and I" />
+  <figcaption>The team (left to right): Ondra, Tomás, Imants, Raphael and I</figcaption>
 </figure>
