@@ -1,8 +1,5 @@
 ---
-title: Academy
 permalink: /academy/
-kicker: Academic profile
-intro: A map of where I studied and worked, and a selection of publications.
 ---
 
 <style>
