@@ -1,36 +1,212 @@
-- title: "DeltaGNN: Graph Neural Network with Information Flow Control"
-  authors: "Kevin Mancini, Islem Rekik"
-  venue: "arXiv preprint"
-  year: 2025
-  image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
-  image_alt: "Close-up of electronic circuitry and abstract network structure"
-  summary: "Introduces information flow control and the information flow score to mitigate over-smoothing and over-squashing in graph neural networks, while keeping the added computational overhead linear."
-  links:
-    - label: "arXiv"
-      url: "https://arxiv.org/abs/2501.06002"
+---
+title: Academy
+permalink: /academy/
+kicker: Academic profile
+intro: A map of where I studied and a selection of publications.
+---
 
-- title: "DuoGNN: Topology-aware Graph Neural Network with Homophily and Heterophily Interaction-Decoupling"
-  authors: "Kevin Mancini, Islem Rekik"
-  venue: "Graphs in Biomedical Image Analysis (MICCAI GRAIL)"
-  year: 2025
-  image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
-  image_alt: "Glowing global network seen from space"
-  summary: "A topology-aware architecture that separates homophilic and heterophilic interactions so they can be modeled with different inductive biases, improving performance across heterogeneous graph benchmarks."
-  links:
-    - label: "arXiv"
-      url: "https://arxiv.org/abs/2409.19616"
-    - label: "YouTube"
-      url: "https://youtu.be/6WtlQQDanaQ"
-    - label: "Springer chapter"
-      url: "https://doi.org/10.1007/978-3-031-83243-7_12"
+<style>
+  @import url("https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.css");
 
-- title: "ScaFi: Integration and Performance Analysis with Scala Native"
-  authors: "Kevin Mancini, Mirko Viroli, Gianluca Aguzzi"
-  venue: "Bachelor thesis, University of Bologna"
-  year: 2022
-  image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
-  image_alt: "Laptop with code on screen in a dark workspace"
-  summary: "Bachelor thesis on integrating ScaFi with Scala Native and evaluating performance for aggregate computing workflows in distributed systems."
-  links:
-    - label: "Thesis PDF"
-      url: "https://amslaurea.unibo.it/id/eprint/25688/1/Mancini_Kevin_Thesis.pdf"
+  .academy-link-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin: 0 0 2rem;
+  }
+
+  .academy-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+
+  .academy-link:hover {
+    color: var(--text);
+  }
+
+  .academic-map-shell {
+    border: 1px solid var(--line);
+    background: var(--surface);
+    overflow: hidden;
+  }
+
+  #academic-map {
+    width: 100%;
+    height: min(68vh, 620px);
+    min-height: 430px;
+  }
+
+  #academic-map .mapboxgl-ctrl-group {
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid var(--line);
+    overflow: hidden;
+  }
+
+  #academic-map .mapboxgl-ctrl-group button {
+    background: var(--surface);
+  }
+
+  #academic-map .mapboxgl-ctrl-group button span {
+    opacity: 0.9;
+  }
+
+  #academic-map .mapboxgl-popup-content {
+    border-radius: 0;
+    box-shadow: 0 12px 36px rgba(22, 22, 22, 0.08);
+    border: 1px solid var(--line);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--text);
+  }
+
+  .publications-grid {
+    display: grid;
+    gap: 1.75rem;
+  }
+
+  .publication-card {
+    display: grid;
+    grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+    border-top: 1px solid var(--line);
+    padding-top: 1.25rem;
+  }
+
+  .publication-media {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+
+  .publication-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.01);
+  }
+
+  .publication-meta {
+    margin: 0 0 0.45rem;
+    color: var(--muted);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.88rem;
+  }
+
+  .publication-title {
+    margin: 0 0 0.75rem;
+  }
+
+  .publication-summary {
+    margin: 0 0 1rem;
+  }
+
+  .publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1rem;
+  }
+
+  .publication-links a {
+    color: var(--muted);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.92rem;
+  }
+
+  .publication-links a:hover {
+    color: var(--text);
+  }
+
+  @media (max-width: 780px) {
+    .publication-card {
+      grid-template-columns: 1fr;
+    }
+
+    #academic-map {
+      min-height: 360px;
+      height: 56vh;
+    }
+  }
+</style>
+
+<div class="academy-link-row">
+  <a class="academy-link" href="{{ site.data.profile.cv }}" target="_blank" rel="noopener">Curriculum vitae</a>
+</div>
+
+<section class="section-block">
+  <div class="section-head">
+    <div>
+      <p class="section-label">Map</p>
+      <h2>Where I studied</h2>
+    </div>
+  </div>
+
+  <div class="academic-map-shell">
+    <div id="academic-map" aria-label="Map of Kevin Mancini's academic journey"></div>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="section-head">
+    <div>
+      <p class="section-label">Publications</p>
+      <h2>Selected work</h2>
+    </div>
+  </div>
+
+  <div class="publications-grid">
+    {% for pub in site.data.publications %}
+      <article class="publication-card">
+        <div class="publication-media">
+          <img src="{{ pub.image }}" alt="{{ pub.image_alt | escape }}" loading="lazy">
+        </div>
+
+        <div class="publication-copy">
+          <p class="publication-meta">{{ pub.authors }} · {{ pub.venue }} · {{ pub.year }}</p>
+          <h3 class="publication-title">{{ pub.title }}</h3>
+          <p class="publication-summary">{{ pub.summary }}</p>
+
+          <div class="publication-links">
+            {% for link in pub.links %}
+              <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const mapContainer = document.getElementById("academic-map");
+    if (!mapContainer || !window.mapboxgl) return;
+
+    mapboxgl.accessToken = "pk.eyJ1Ijoia2V2aW5tYW5jaW5pIiwiYSI6ImNrbmxycTBpODBnODgzMXFwM2g5eGluaXoifQ.CDOZybMCLF7KQAaHYWRhaQ";
+
+    const map = new mapboxgl.Map({
+      container: "academic-map",
+      style: "mapbox://styles/kevinmancini/cmmxc43e8003101sigd4j00tc",
+      center: [10.5, 48.2],
+      zoom: 3.2
+    });
+
+    map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "top-right");
+    map.scrollZoom.disable();
+    map.dragRotate.disable();
+    map.touchZoomRotate.disableRotation();
+
+    map.on("load", function () {
+      map.resize();
+    });
+  });
+</script>
