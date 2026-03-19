@@ -6,27 +6,44 @@ intro: A map of where I studied and a selection of publications.
 ---
 
 <style>
-  .academy-link-row {
+  .academic-map-layout {
+    display: grid;
+    grid-template-columns: minmax(180px, 220px) minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .academic-journey {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid var(--line);
+    padding-top: 1rem;
+  }
+
+  .journey-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
     gap: 0.9rem;
-    margin: 0 0 2rem;
   }
 
-  .academy-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    padding: 0.8rem 1rem;
-    border: 1px solid var(--line);
-    background: var(--surface);
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-size: 0.95rem;
+  .journey-list li {
+    display: grid;
+    gap: 0.15rem;
+  }
+
+  .journey-place {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .journey-note {
+    margin: 0;
     color: var(--muted);
-  }
-
-  .academy-link:hover {
-    color: var(--text);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.92rem;
   }
 
   .academic-map-shell {
@@ -38,8 +55,8 @@ intro: A map of where I studied and a selection of publications.
   .academic-map-frame {
     display: block;
     width: 100%;
-    height: min(68vh, 620px);
-    min-height: 430px;
+    height: 620px;
+    min-height: 520px;
     border: none;
   }
 
@@ -102,42 +119,69 @@ intro: A map of where I studied and a selection of publications.
     color: var(--text);
   }
 
+  @media (max-width: 900px) {
+    .academic-map-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .academic-map-frame {
+      height: 540px;
+      min-height: 420px;
+    }
+  }
+
   @media (max-width: 780px) {
     .publication-card {
       grid-template-columns: 1fr;
     }
 
     .academic-map-frame {
+      height: 460px;
       min-height: 360px;
-      height: 56vh;
     }
   }
 </style>
 
-<div class="academy-link-row">
-  <a class="academy-link" href="{{ site.data.profile.cv }}" target="_blank" rel="noopener">Curriculum vitae</a>
-</div>
-
 <section class="section-block">
-  <div class="section-head">
-    <div>
-      <p class="section-label">Map</p>
-      <h2>Where I studied</h2>
-    </div>
-  </div>
+  <p class="section-label">MAP</p>
 
-  <div class="academic-map-shell">
-<iframe width='100%' height='400px' src="https://api.mapbox.com/styles/v1/kevinmancini/cmmxc43e8003101sigd4j00tc.html?title=false&access_token=pk.eyJ1Ijoia2V2aW5tYW5jaW5pIiwiYSI6ImNrbmxycTBpODBnODgzMXFwM2g5eGluaXoifQ.CDOZybMCLF7KQAaHYWRhaQ&zoomwheel=false#2/38/-34" title="Academy" style="border:none;"></iframe>
+  <div class="academic-map-layout">
+    <div class="academic-journey">
+      <ul class="journey-list">
+        <li>
+          <p class="journey-place">Bologna</p>
+          <p class="journey-note">Bachelor's studies</p>
+        </li>
+        <li>
+          <p class="journey-place">Rome</p>
+          <p class="journey-note">Master's studies</p>
+        </li>
+        <li>
+          <p class="journey-place">London</p>
+          <p class="journey-note">Research and study period</p>
+        </li>
+        <li>
+          <p class="journey-place">Warwick</p>
+          <p class="journey-note">PhD, starting in 2027</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="academic-map-shell">
+      <iframe
+        class="academic-map-frame"
+        width="100%"
+        height="400px"
+        src="https://api.mapbox.com/styles/v1/kevinmancini/cmmxc43e8003101sigd4j00tc.html?title=false&access_token=pk.eyJ1Ijoia2V2aW5tYW5jaW5pIiwiYSI6ImNrbmxycTBpODBnODgzMXFwM2g5eGluaXoifQ.CDOZybMCLF7KQAaHYWRhaQ&zoomwheel=false#3.39/46.77/4.95"
+        title="Academy"
+        style="border:none;">
+      </iframe>
+    </div>
   </div>
 </section>
 
 <section class="section-block">
-  <div class="section-head">
-    <div>
-      <p class="section-label">Publications</p>
-      <h2>Selected work</h2>
-    </div>
-  </div>
+  <p class="section-label">PUBLICATIONS</p>
 
   <div class="publications-grid">
     {% for pub in site.data.publications %}
