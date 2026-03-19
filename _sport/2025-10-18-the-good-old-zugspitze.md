@@ -5,12 +5,6 @@ date: 2025-10-18
 location: "Zugspitze, Germany"
 excerpt: "A fast one-day push from Ehrwald to the summit of the Zugspitze through the Gatterl route, in snow, ice, and very good company."
 cover_image: "/assets/images/sport/icon.JPG"
-tags:
-  - hiking
-  - alpinism
-  - zugspitze
-  - germany
-  - team
 ---
 
 While the Zugspitze has a solid and respectable reputation among the German population, who proudly rarely fail to remark upon its status as the highest peak in the country, the German mountaineering community shares an equally immutable, objective, and sadly distant perspective: it is the last place you want to be for a hike in Germany.
@@ -25,7 +19,7 @@ We decided to start from Ehrwald and hike to the top through the Gatterl route, 
 
 <figure>
   <img src="/assets/images/sport/gatterl.JPG" alt="Starting in Ehrwald, near the Gatterl passage on the German–Austrian border" />
-  <figcaption>Starting in Ehrwald, near the Gatterl passage on the German–Austrian border.</figcaption>
+  <figcaption>Starting in Ehrwald, near the Gatterl passage on the German–Austrian border. @raphalouff</figcaption>
 </figure>
 
 The numbers, in the end, were simple enough: 5 hours and 42 minutes to the top, around 19 kilometres covered, and 2,289 meters of elevation gained.
@@ -38,12 +32,12 @@ A real challenge.
 
 <figure>
   <img src="/assets/images/sport/ice.JPG" alt="Snowy upper view from the Zugspitze, close to summit" />
-  <figcaption>The last stretch: snow, some ice, and that particular late-October feeling that makes everything more serious.</figcaption>
+  <figcaption>The last stretch: snow, some ice, and that particular late-October feeling that makes everything more serious. @raphalouff</figcaption>
 </figure>
 
 Two brave members of the group, not me, escaped the premature glory of reaching the peak and decided to walk down instead of taking the cable car. That may have been the boldest choice of the day.
 
-However impressive the physical challenge was, and however unimpressive the Zugspitze may seem to some, that is not really the reason I wanted to write this adventure down.
+However impressive the physical challenge was, and unimpressive the Zugspitze may seem to some, that is not really the reason I wanted to write this adventure down.
 
 The reason is the team.
 
@@ -53,5 +47,5 @@ In both cases, I am sure it will be memorable.
 
 <figure>
   <img src="/assets/images/sport/team.jpeg" alt="The team (left to right): Ondra, Tomás, Imants, Raphael and I" />
-  <figcaption>The team (left to right): Ondra, Tomás, Imants, Raphael and I</figcaption>
+  <figcaption>The team (left to right): Ondra @novak.o21, Tomás, Imants, Raphael @raphalouff and I</figcaption>
 </figure>
