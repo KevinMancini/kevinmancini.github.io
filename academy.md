@@ -2,130 +2,162 @@
 title: Academy
 permalink: /academy/
 kicker: Academic profile
-intro: A structured overview of background, education, research, selected publications, talks, and links.
+intro: A map of where I studied and a selection of publications.
 ---
 
-<div class="split-grid">
-  <div class="panel">
-    <p class="mini-heading">Profile</p>
-    <p>{{ site.data.profile.summary }}</p>
-    <p>{{ site.data.profile.research_focus }}</p>
-    <p>{{ site.data.profile.current_note }}</p>
-  </div>
-  <div class="panel">
-    <p class="mini-heading">Quick links</p>
-    <div class="link-list">
-      <a href="{{ site.data.profile.cv }}">Curriculum vitae</a>
-      <a href="{{ site.data.profile.scholar }}">Google Scholar</a>
-      <a href="{{ site.data.profile.linkedin }}">LinkedIn</a>
-      <a href="{{ site.data.profile.github }}">GitHub</a>
-      <a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a>
+<style>
+  .academy-link-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin: 0 0 2rem;
+  }
+
+  .academy-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+
+  .academy-link:hover {
+    color: var(--text);
+  }
+
+  .academic-map-shell {
+    border: 1px solid var(--line);
+    background: var(--surface);
+    overflow: hidden;
+  }
+
+  .academic-map-frame {
+    display: block;
+    width: 100%;
+    height: min(68vh, 620px);
+    min-height: 430px;
+    border: none;
+  }
+
+  .publications-grid {
+    display: grid;
+    gap: 1.75rem;
+  }
+
+  .publication-card {
+    display: grid;
+    grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+    border-top: 1px solid var(--line);
+    padding-top: 1.25rem;
+  }
+
+  .publication-media {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+
+  .publication-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.01);
+  }
+
+  .publication-meta {
+    margin: 0 0 0.45rem;
+    color: var(--muted);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.88rem;
+  }
+
+  .publication-title {
+    margin: 0 0 0.75rem;
+  }
+
+  .publication-summary {
+    margin: 0 0 1rem;
+  }
+
+  .publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1rem;
+  }
+
+  .publication-links a {
+    color: var(--muted);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.92rem;
+  }
+
+  .publication-links a:hover {
+    color: var(--text);
+  }
+
+  @media (max-width: 780px) {
+    .publication-card {
+      grid-template-columns: 1fr;
+    }
+
+    .academic-map-frame {
+      min-height: 360px;
+      height: 56vh;
+    }
+  }
+</style>
+
+<div class="academy-link-row">
+  <a class="academy-link" href="{{ site.data.profile.cv }}" target="_blank" rel="noopener">Curriculum vitae</a>
+</div>
+
+<section class="section-block">
+  <div class="section-head">
+    <div>
+      <p class="section-label">Map</p>
+      <h2>Where I studied</h2>
     </div>
   </div>
-</div>
 
-## Education
-
-<div class="timeline">
-  {% for item in site.data.education %}
-    <div class="timeline-item panel">
-      <div class="timeline-top">
-        <h3>{{ item.institution }}</h3>
-        <span>{{ item.years }}</span>
-      </div>
-      <p class="meta">{{ item.degree }} · {{ item.place }}</p>
-      <ul>
-        {% for detail in item.details %}
-          <li>{{ detail }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endfor %}
-</div>
-
-## Research and projects
-
-<div class="timeline">
-  {% for item in site.data.research %}
-    <div class="timeline-item panel">
-      <div class="timeline-top">
-        <h3>{{ item.role }}</h3>
-        <span>{{ item.years }}</span>
-      </div>
-      <p class="meta">{{ item.place }}</p>
-      <ul>
-        {% for detail in item.details %}
-          <li>{{ detail }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endfor %}
-</div>
-
-## Selected publications
-
-<div class="stack">
-  {% for pub in site.data.publications %}
-    <div class="panel publication-card">
-      <h3>{{ pub.title }}</h3>
-      <p class="meta">{{ pub.authors }} · {{ pub.venue }} · {{ pub.year }}</p>
-      <div class="button-row tight">
-        {% for link in pub.links %}
-          <a class="button small" href="{{ link.url }}">{{ link.label }}</a>
-        {% endfor %}
-      </div>
-    </div>
-  {% endfor %}
-</div>
-
-## Talks
-
-<div class="card-grid two-up">
-  {% for talk in site.data.talks %}
-    <div class="panel">
-      <p class="mini-heading">{{ talk.date }}</p>
-      <h3>{{ talk.title }}</h3>
-      <p>{{ talk.venue }} · {{ talk.place }}</p>
-    </div>
-  {% endfor %}
-</div>
-
-## Experience
-
-<div class="timeline">
-  {% for item in site.data.experience %}
-    <div class="timeline-item panel">
-      <div class="timeline-top">
-        <h3>{{ item.company }}</h3>
-        <span>{{ item.years }}</span>
-      </div>
-      <p class="meta">{{ item.role }} · {{ item.place }}</p>
-      <ul>
-        {% for detail in item.details %}
-          <li>{{ detail }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endfor %}
-</div>
-
-## Honors and awards
-
-<div class="split-grid">
-  <div class="panel">
-    <p class="mini-heading">Academic excellence</p>
-    <ul class="simple-list">
-      {% for item in site.data.awards.academic %}
-        <li><strong>{{ item.date }}</strong> — {{ item.text }}</li>
-      {% endfor %}
-    </ul>
+  <div class="academic-map-shell">
+<iframe width='100%' height='400px' src="https://api.mapbox.com/styles/v1/kevinmancini/cmmxc43e8003101sigd4j00tc.html?title=false&access_token=pk.eyJ1Ijoia2V2aW5tYW5jaW5pIiwiYSI6ImNrbmxycTBpODBnODgzMXFwM2g5eGluaXoifQ.CDOZybMCLF7KQAaHYWRhaQ&zoomwheel=false#2/38/-34" title="Academy" style="border:none;"></iframe>
   </div>
-  <div class="panel">
-    <p class="mini-heading">Other distinctions</p>
-    <ul class="simple-list">
-      {% for item in site.data.awards.other %}
-        <li><strong>{{ item.date }}</strong> — {{ item.text }}</li>
-      {% endfor %}
-    </ul>
+</section>
+
+<section class="section-block">
+  <div class="section-head">
+    <div>
+      <p class="section-label">Publications</p>
+      <h2>Selected work</h2>
+    </div>
   </div>
-</div>
+
+  <div class="publications-grid">
+    {% for pub in site.data.publications %}
+      <article class="publication-card">
+        <div class="publication-media">
+          <img src="{{ pub.image }}" alt="{{ pub.image_alt | escape }}" loading="lazy">
+        </div>
+
+        <div class="publication-copy">
+          <p class="publication-meta">{{ pub.authors }} · {{ pub.venue }} · {{ pub.year }}</p>
+          <h3 class="publication-title">{{ pub.title }}</h3>
+          <p class="publication-summary">{{ pub.summary }}</p>
+
+          <div class="publication-links">
+            {% for link in pub.links %}
+              <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
