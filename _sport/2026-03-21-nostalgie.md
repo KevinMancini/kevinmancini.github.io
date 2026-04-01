@@ -16,7 +16,7 @@ Troverete qui alcune note di viaggio: il racconto di un percorso che ha portato 
 
 ---
 
-## Il viaggio di andata (2 giorni)
+# Il viaggio di andata (2 giorni)
 
 *Space Oddity — David Bowie*
 
@@ -44,7 +44,7 @@ Goslar, invece, è stata una triplice sorpresa: il paesino, stupendo e indimenti
 
 ---
 
-## La ricerca (3 giorni)
+# La ricerca (3 giorni)
 
 *Der Traum ist aus — Rio Reiser*
 
@@ -61,7 +61,7 @@ Abbiamo mangiato un panino all’aringa, cenato con cucina greca e ascoltato mus
 
 ---
 
-## Il viaggio di ritorno (1 giorno)
+# Il viaggio di ritorno (1 giorno)
 
 *Lust for Life — Iggy Pop*
 
