@@ -25,7 +25,7 @@ Utilizzando esclusivamente treni regionali, la tratta Monaco–Hötensleben supe
 Il soggiorno a Bamberga è stato sorprendente. Le vie della città pullulano di negozietti e ristoranti, e, seguendo l’istinto di due veri esploratori, ci siamo avventurati in un mercatino dell’usato allestito in un appartamento privato al secondo piano, raggiunto grazie a istruzioni appiccicate su un citofono.
 
 
-<figure class="post-figure">
+<figure class="post-figure small">
   <img src="/assets/images/sport/bamberg.jpg" alt="I ponti di Bamberga" />
   <figcaption>I ponti di Bamberga, nel centro storico.</figcaption>
 </figure>
@@ -37,7 +37,7 @@ Sul treno per Goslar, nel tentativo frenetico di accaparrarci un posto, ci siamo
 
 Goslar, invece, è stata una triplice sorpresa: il paesino, stupendo e indimenticabile; la birra, una Gose altrettanto memorabile; e l’ostello, wow, inaspettato.
 
-<figure class="post-figure">
+<figure class="post-figure small">
   <img src="/assets/images/sport/goslar.jpg" alt="Un tipico vialetto notturno di Goslar" />
   <figcaption>Un tipico vialetto notturno di Goslar.</figcaption>
 </figure>
@@ -54,7 +54,7 @@ Ho assistito a numerose interviste con gli abitanti del luogo, incentrate sui lo
 
 Abbiamo mangiato un panino all’aringa, cenato con cucina greca e ascoltato musica industrial rock. Grazie ancora, René, per avercela fatta scoprire e mi dispiace non esserci fatti una foto insieme; spero che questa possa compensare.
 
-<figure class="post-figure">
+<figure class="post-figure small">
   <img src="/assets/images/sport/rene.jpg" alt="Noi e René" />
   <figcaption>Noi e René</figcaption>
 </figure>
