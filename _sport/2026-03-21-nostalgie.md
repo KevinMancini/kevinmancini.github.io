@@ -3,10 +3,6 @@ title: "Nostalgie für Hötensleben"
 date: 2026-03-21
 location: "Germany"
 excerpt: ""
-tags:
-  - travel
-  - germany
-  - journal
 cover_image: "/assets/images/sport/hotensleben.jpg"
 ---
 
