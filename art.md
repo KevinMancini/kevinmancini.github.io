@@ -1,13 +1,9 @@
 ---
-title: Art
+title: Coming soon
 permalink: /art/
 kicker: Journal
 intro: A space for classical music, piano notes, essays, and writing fragments â€” built with the same post-by-post workflow as the sport section.
 ---
-
-<div class="panel callout">
-  <p>This section is ideal for repertoire reflections, concert notes, drafts, essays, and excerpts. Add a new Markdown file to <code>_art/</code> and it will be listed automatically.</p>
-</div>
 
 {% assign posts = site.art | sort: 'date' | reverse %}
 {% if posts.size > 0 %}
@@ -26,10 +22,5 @@ intro: A space for classical music, piano notes, essays, and writing fragments â
         </div>
       </a>
     {% endfor %}
-  </div>
-{% else %}
-  <div class="panel empty-state">
-    <p>No art entries yet.</p>
-    <p class="muted">Copy <code>templates/art-post-template.md</code> into <code>_art/</code>, rename it, and start writing.</p>
   </div>
 {% endif %}

@@ -1,13 +1,9 @@
 ---
-title: Sport
+title: Adventures
 permalink: /sport/
 kicker: Journal
 intro: A home for climbing, alpinism, trekking, running, diving, and travel stories — designed to be updated post by post.
 ---
-
-<div class="panel callout">
-  <p>This page works like a clean archive. Add a new Markdown file to <code>_sport/</code>, commit it to GitHub, and the post will appear automatically here and on the home page.</p>
-</div>
 
 {% assign posts = site.sport | sort: 'date' | reverse %}
 {% if posts.size > 0 %}

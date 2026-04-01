@@ -47,5 +47,5 @@ In both cases, I am sure it will be memorable.
 
 <figure>
   <img src="/assets/images/sport/team.jpeg" alt="The team (left to right): Ondra, Tomás, Imants, Raphael and I" />
-  <figcaption>The team (left to right): Ondra @novak.o21, Tomás, Imants, Raphael @raphalouff and I</figcaption>
+  <figcaption>The team (left to right): Ondra @novak.o21, Tomás @tomassarmento, Imants, Raphael @raphalouff and I</figcaption>
 </figure>
