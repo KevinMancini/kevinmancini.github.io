@@ -7,7 +7,7 @@ tags:
   - travel
   - germany
   - journal
-cover_image: "/assets/images/sport/hotensleben.JPG"
+cover_image: "/assets/images/sport/hotensleben.jpg"
 ---
 
 È difficile non conoscere l’euforia nel pianificare un viaggio: immaginarne i risvolti, le sfide, i rischi e infine attenderne la partenza con crescente fibrillazione. Spesso è questa la danza che precede numerose avventure, mentre esse attendono soltanto di essere vissute e rese concrete.
