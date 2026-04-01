@@ -2,8 +2,6 @@
 title: "Nostalgie für Hötensleben"
 date: 2026-03-21
 location: "Germany"
-excerpt: "Some journeys are planned in detail; others arrive from elsewhere and ask only whether we are willing to follow them."
-cover_image: "/assets/images/sport/bamberg.jpg"
 tags:
   - travel
   - germany
@@ -28,7 +26,12 @@ Utilizzando esclusivamente treni regionali, la tratta Monaco–Hötensleben supe
 
 Il soggiorno a Bamberga è stato sorprendente. Le vie della città pullulano di negozietti e ristoranti, e, seguendo l’istinto di due veri esploratori, ci siamo avventurati in un mercatino dell’usato allestito in un appartamento privato al secondo piano, raggiunto grazie a istruzioni appiccicate su un citofono.
 
-![Bamberga](/assets/images/sport/bamberg.jpg)
+
+<figure class="post-figure">
+  <img src="/assets/images/sport/bamberg.jpg" alt="ALT" />
+  <figcaption>CAPTION</figcaption>
+</figure>
+
 
 Sconfitti e frustrati per non aver trovato ciò che nemmeno sapevamo di cercare, ci siamo diretti con lucida determinazione alla Rauchbierbrauerei, per poi tornare felicemente un paio di ore dopo, seppur meno lucidamente, all’hotel.
 
@@ -36,7 +39,10 @@ Sul treno per Goslar, nel tentativo frenetico di accaparrarci un posto, ci siamo
 
 Goslar, invece, è stata una triplice sorpresa: il paesino, stupendo e indimenticabile; la birra, una Gose altrettanto memorabile; e l’ostello, wow, inaspettato.
 
-![Goslar](/assets/images/sport/goslar.jpg)
+<figure class="post-figure">
+  <img src="/assets/images/sport/goslar.jpg" alt="ALT" />
+  <figcaption>CAPTION</figcaption>
+</figure>
 
 ---
 
@@ -50,7 +56,10 @@ Ho assistito a numerose interviste con gli abitanti del luogo, incentrate sui lo
 
 Abbiamo mangiato un panino all’aringa, cenato con cucina greca e ascoltato musica industrial rock. Grazie ancora, René, per avercela fatta scoprire e mi dispiace non esserci fatti una foto insieme; spero che questa possa compensare.
 
-![René](/assets/images/sport/rene.jpg)
+<figure class="post-figure">
+  <img src="/assets/images/sport/rene.jpg" alt="ALT" />
+  <figcaption>CAPTION</figcaption>
+</figure>
 
 ---
 
