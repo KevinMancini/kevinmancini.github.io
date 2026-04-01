@@ -35,7 +35,7 @@ Sconfitti e frustrati per non aver trovato ciò che nemmeno sapevamo di cercare,
 
 Sul treno per Goslar, nel tentativo frenetico di accaparrarci un posto, ci siamo imbattuti in una coppia di personaggi curiosi: un biologo e un presunto medico, autoproclamato eccellente ma occasionalmente sfortunato con gli affari. Con loro abbiamo intrapreso una fantasiosa conversazione italo–tedesco–russo–farsi, conclusasi con l’offerta di un paio di “Пирожки” artigianali ma pericolosamente antigenici.
 
-Goslar, invece, è stata una triplice sorpresa: il paesino, stupendo e indimenticabile; la birra, una Gose altrettanto memorabile; e l’ostello, wow, inaspettato.
+Goslar, invece, è stata una triplice sorpresa: il paesino, stupendo e indimenticabile; la birra, una Gose altrettanto memorabile; e all’ostello, wow, inaspettato.
 
 <figure class="post-figure small">
   <img src="/assets/images/sport/goslar.jpg" alt="Un tipico vialetto notturno di Goslar" />
