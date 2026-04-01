@@ -17,7 +17,7 @@ defaults:
       type: "sport"
     values:
       layout: post
-      section: sport
+      section: adventures
   - scope:
       path: ""
       type: "art"
