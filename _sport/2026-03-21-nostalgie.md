@@ -79,6 +79,6 @@ Va bene, va bene. Dato che vi ho a cuore, miei cari lettori, la scriverò comunq
 
 L’autoparlante del treno annuncia:
 
-> “Nächster Halt: München Hauptbahnhof. Ausstieg in Fahrtrichtung rechts.”
+> *„Nächster Halt: München Hauptbahnhof. Ausstieg in Fahrtrichtung rechts.“*
 
 Oh no, proprio ora che stavo per raccontarvi tutto. Devo andare. Prometto che tornerò. E che vi dirò ogni cosa.
