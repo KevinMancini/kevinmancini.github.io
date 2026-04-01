@@ -2,10 +2,12 @@
 title: "Nostalgie für Hötensleben"
 date: 2026-03-21
 location: "Germany"
+excerpt: ""
 tags:
   - travel
   - germany
   - journal
+cover_image: "/assets/images/sport/hotensleben.JPG"
 ---
 
 È difficile non conoscere l’euforia nel pianificare un viaggio: immaginarne i risvolti, le sfide, i rischi e infine attenderne la partenza con crescente fibrillazione. Spesso è questa la danza che precede numerose avventure, mentre esse attendono soltanto di essere vissute e rese concrete.
@@ -28,8 +30,8 @@ Il soggiorno a Bamberga è stato sorprendente. Le vie della città pullulano di 
 
 
 <figure class="post-figure">
-  <img src="/assets/images/sport/bamberg.jpg" alt="ALT" />
-  <figcaption>CAPTION</figcaption>
+  <img src="/assets/images/sport/bamberg.jpg" alt="I ponti di Bamberga" />
+  <figcaption>I ponti di Bamberga, nel centro storico.</figcaption>
 </figure>
 
 
@@ -40,8 +42,8 @@ Sul treno per Goslar, nel tentativo frenetico di accaparrarci un posto, ci siamo
 Goslar, invece, è stata una triplice sorpresa: il paesino, stupendo e indimenticabile; la birra, una Gose altrettanto memorabile; e l’ostello, wow, inaspettato.
 
 <figure class="post-figure">
-  <img src="/assets/images/sport/goslar.jpg" alt="ALT" />
-  <figcaption>CAPTION</figcaption>
+  <img src="/assets/images/sport/goslar.jpg" alt="Un tipico vialetto notturno di Goslar" />
+  <figcaption>Un tipico vialetto notturno di Goslar.</figcaption>
 </figure>
 
 ---
@@ -57,8 +59,8 @@ Ho assistito a numerose interviste con gli abitanti del luogo, incentrate sui lo
 Abbiamo mangiato un panino all’aringa, cenato con cucina greca e ascoltato musica industrial rock. Grazie ancora, René, per avercela fatta scoprire e mi dispiace non esserci fatti una foto insieme; spero che questa possa compensare.
 
 <figure class="post-figure">
-  <img src="/assets/images/sport/rene.jpg" alt="ALT" />
-  <figcaption>CAPTION</figcaption>
+  <img src="/assets/images/sport/rene.jpg" alt="Noi e René" />
+  <figcaption>Noi e René</figcaption>
 </figure>
 
 ---
